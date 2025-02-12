@@ -1,0 +1,30 @@
+{
+  "name": "kanti/ssh-tunnel",
+  "description": "SSH Port forward via PHP Code",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Matthias Vogel",
+      "email": "git@kanti.de"
+    }
+  ],
+  "require": {
+    "php": "^8.2"
+  },
+  "require-dev": {
+    "pluswerk/grumphp-config": "^7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kanti\\SshTunnel\\": "src/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "ergebnis/composer-normalize": true,
+      "phpro/grumphp": true,
+      "phpstan/extension-installer": true,
+      "pluswerk/grumphp-config": true
+    }
+  }
+}
