@@ -9,10 +9,11 @@
     }
   ],
   "require": {
-    "php": "^8.2"
+    "php": "^8.2",
+    "symfony/process": "^5 || ^6 || ^7"
   },
   "require-dev": {
-    "pluswerk/grumphp-config": "^7.1"
+    "pluswerk/grumphp-config": "^10.1.4"
   },
   "autoload": {
     "psr-4": {
