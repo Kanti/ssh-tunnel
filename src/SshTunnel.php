@@ -166,7 +166,7 @@ final class SshTunnel
     {
         $process = Process::fromShellCommandline('ssh -O check -S ~/.ssh/master-%r@%h:%p ' . $this->destinationPart());
         $process->run();
-        if (!in_array($process->getExitCode(), [0, 255])) {
+        if (!in_array($process->getExitCode(), [0, 255], true)) {
             throw new ProcessFailedException($process);
         }
 
