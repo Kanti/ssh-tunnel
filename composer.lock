@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8c6299f2b503e7b37d8ccc27556f59b7",
+    "content-hash": "6fdc93c351ad706725fe8478a3f45492",
     "packages": [
         {
             "name": "symfony/process",
@@ -74,6 +74,556 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "a9f/fractor",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andreaswolf/fractor-fractor.git",
+                "reference": "06d30195f9350eb7689e09c152d889828f3a8cef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andreaswolf/fractor-fractor/zipball/06d30195f9350eb7689e09c152d889828f3a8cef",
+                "reference": "06d30195f9350eb7689e09c152d889828f3a8cef",
+                "shasum": ""
+            },
+            "require": {
+                "league/flysystem": "^2.0 || ^3.0",
+                "league/flysystem-memory": "^2.0 || ^3.0",
+                "nette/utils": "^4.0",
+                "ondram/ci-detector": "^4.2",
+                "php": "^8.2",
+                "sebastian/diff": "^4.0 || ^5.0 || ^6.0 || ^7.0 || ^8.0 || ^9.0",
+                "symfony/config": "^5.4 || ^6.4 || ^7.0 || ^8.0",
+                "symfony/console": "^5.4 || ^6.4 || ^7.0 || ^8.0",
+                "symfony/dependency-injection": "^6.4 || ^7.0 || ^8.0",
+                "symfony/filesystem": "^5.4 || ^6.4 || ^7.0 || ^8.0",
+                "symfony/finder": "^5.4 || ^6.4 || ^7.0 || ^8.0",
+                "symplify/rule-doc-generator-contracts": "^11.2",
+                "webmozart/assert": "^1.11 || ^2.0"
+            },
+            "bin": [
+                "bin/fractor"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "a9f\\Fractor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Wolf",
+                    "email": "dev@a-w.io",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "File Read-Analyse-Change Tool",
+            "keywords": [
+                "automation",
+                "dev",
+                "fractor",
+                "migration",
+                "refactoring",
+                "upgrade"
+            ],
+            "support": {
+                "source": "https://github.com/andreaswolf/fractor-fractor/tree/v1.1.0"
+            },
+            "time": "2026-09-25T12:42:45+00:00",
+            "published-time": "2026-09-25T12:43:09+00:00"
+        },
+        {
+            "name": "a9f/fractor-extension-installer",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andreaswolf/fractor-extension-installer.git",
+                "reference": "6a058ee03894c50f1859cbdecdc157775600858e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andreaswolf/fractor-extension-installer/zipball/6a058ee03894c50f1859cbdecdc157775600858e",
+                "reference": "6a058ee03894c50f1859cbdecdc157775600858e",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^2.0",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "composer/composer": "^2.7"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "a9f\\FractorExtensionInstaller\\InstallerPlugin",
+                "branch-alias": {
+                    "dev-main": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "a9f\\FractorExtensionInstaller\\": "src/",
+                    "a9f\\FractorExtensionInstaller\\Generated\\": "generated/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Wolf",
+                    "email": "dev@a-w.io",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "Installer for Fractor extensions.",
+            "support": {
+                "source": "https://github.com/andreaswolf/fractor-extension-installer/tree/v1.1.0"
+            },
+            "time": "2026-07-08T11:52:14+00:00",
+            "published-time": "2026-09-25T12:43:05+00:00"
+        },
+        {
+            "name": "a9f/fractor-fluid",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andreaswolf/fractor-fluid.git",
+                "reference": "366df1b1d9594a7ba06bb51cd0a4bb542779b6a0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andreaswolf/fractor-fluid/zipball/366df1b1d9594a7ba06bb51cd0a4bb542779b6a0",
+                "reference": "366df1b1d9594a7ba06bb51cd0a4bb542779b6a0",
+                "shasum": ""
+            },
+            "require": {
+                "a9f/fractor": "^1.1",
+                "a9f/fractor-extension-installer": "^1.1",
+                "nette/utils": "^4.0",
+                "php": "^8.2",
+                "symplify/rule-doc-generator-contracts": "^11.2",
+                "webmozart/assert": "^1.11 || ^2.0"
+            },
+            "type": "fractor-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "a9f\\FractorFluid\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Wolf",
+                    "email": "dev@a-w.io",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "Fluid extension for the File Read-Analyse-Change Tool. Allows modifying Fluid files",
+            "keywords": [
+                "automation",
+                "dev",
+                "fractor",
+                "migration",
+                "refactoring",
+                "upgrade"
+            ],
+            "support": {
+                "issues": "https://github.com/andreaswolf/fractor-fluid/issues",
+                "source": "https://github.com/andreaswolf/fractor-fluid/tree/v1.1.0"
+            },
+            "time": "2026-09-25T12:42:45+00:00",
+            "published-time": "2026-09-25T12:43:07+00:00"
+        },
+        {
+            "name": "a9f/fractor-htaccess",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andreaswolf/fractor-htaccess.git",
+                "reference": "73204d0d1c241e11259742a06ca3e85a35699bb2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andreaswolf/fractor-htaccess/zipball/73204d0d1c241e11259742a06ca3e85a35699bb2",
+                "reference": "73204d0d1c241e11259742a06ca3e85a35699bb2",
+                "shasum": ""
+            },
+            "require": {
+                "a9f/fractor": "^1.1",
+                "a9f/fractor-extension-installer": "^1.1",
+                "nette/utils": "^4.0",
+                "php": "^8.2",
+                "symplify/rule-doc-generator-contracts": "^11.2",
+                "tivie/htaccess-parser": "^0.4.0",
+                "webmozart/assert": "^1.11 || ^2.0"
+            },
+            "type": "fractor-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "a9f\\FractorHtaccess\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Simon Schaufelberger",
+                    "email": "simonschaufi@gmail.com",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "htaccess extension for the File Read-Analyse-Change Tool. Allows modifying htaccess files",
+            "keywords": [
+                "automation",
+                "dev",
+                "fractor",
+                "migration",
+                "refactoring",
+                "upgrade"
+            ],
+            "support": {
+                "source": "https://github.com/andreaswolf/fractor-htaccess/tree/v1.1.0"
+            },
+            "time": "2026-09-25T12:42:45+00:00",
+            "published-time": "2026-09-25T12:43:05+00:00"
+        },
+        {
+            "name": "a9f/fractor-typoscript",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andreaswolf/fractor-typoscript.git",
+                "reference": "9cd1c20bd6fb22f97f0644eeaadc5a44cd45a5c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andreaswolf/fractor-typoscript/zipball/9cd1c20bd6fb22f97f0644eeaadc5a44cd45a5c9",
+                "reference": "9cd1c20bd6fb22f97f0644eeaadc5a44cd45a5c9",
+                "shasum": ""
+            },
+            "require": {
+                "a9f/fractor": "^1.1",
+                "a9f/fractor-extension-installer": "^1.1",
+                "helmich/typo3-typoscript-parser": "^2.8.0",
+                "php": "^8.2",
+                "symplify/rule-doc-generator-contracts": "^11.2",
+                "webmozart/assert": "^1.11 || ^2.0"
+            },
+            "type": "fractor-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "a9f\\FractorTypoScript\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Wolf",
+                    "email": "dev@a-w.io",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "TypoScript extension for the File Read-Analyse-Change Tool. Allows modifying TYPO3 TypoScript configuration files",
+            "keywords": [
+                "automation",
+                "dev",
+                "fractor",
+                "migration",
+                "refactoring",
+                "upgrade"
+            ],
+            "support": {
+                "source": "https://github.com/andreaswolf/fractor-typoscript/tree/v1.1.0"
+            },
+            "time": "2026-09-25T12:42:45+00:00",
+            "published-time": "2026-09-25T12:43:07+00:00"
+        },
+        {
+            "name": "a9f/fractor-xliff",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andreaswolf/fractor-xliff.git",
+                "reference": "26ca6f4587a71eaf9e08ad630fa2ada77cd2daa5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andreaswolf/fractor-xliff/zipball/26ca6f4587a71eaf9e08ad630fa2ada77cd2daa5",
+                "reference": "26ca6f4587a71eaf9e08ad630fa2ada77cd2daa5",
+                "shasum": ""
+            },
+            "require": {
+                "a9f/fractor": "^1.1",
+                "a9f/fractor-extension-installer": "^1.1",
+                "ext-dom": "*",
+                "ext-xml": "*",
+                "php": "^8.2",
+                "simonschaufi/pretty-xml": "^3.0.0",
+                "symplify/rule-doc-generator-contracts": "^11.2",
+                "webmozart/assert": "^1.11 || ^2.0"
+            },
+            "type": "fractor-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "a9f\\FractorXliff\\": [
+                        "src/",
+                        "rules/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "XLIFF extension for the File Read-Analyse-Change Tool. Allows modifying XLIFF translation files",
+            "keywords": [
+                "automation",
+                "dev",
+                "fractor",
+                "migration",
+                "refactoring",
+                "translation",
+                "upgrade",
+                "xliff"
+            ],
+            "support": {
+                "source": "https://github.com/andreaswolf/fractor-xliff/tree/v1.1.0"
+            },
+            "time": "2026-09-25T12:42:45+00:00",
+            "published-time": "2026-09-25T12:43:05+00:00"
+        },
+        {
+            "name": "a9f/fractor-xml",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andreaswolf/fractor-xml.git",
+                "reference": "ca4eda2ad1d3eee28e8c7614550ba983a4887eb9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andreaswolf/fractor-xml/zipball/ca4eda2ad1d3eee28e8c7614550ba983a4887eb9",
+                "reference": "ca4eda2ad1d3eee28e8c7614550ba983a4887eb9",
+                "shasum": ""
+            },
+            "require": {
+                "a9f/fractor": "^1.1",
+                "a9f/fractor-extension-installer": "^1.1",
+                "ext-dom": "*",
+                "ext-xml": "*",
+                "php": "^8.2",
+                "simonschaufi/pretty-xml": "^3.0.0",
+                "symplify/rule-doc-generator-contracts": "^11.2",
+                "webmozart/assert": "^1.11 || ^2.0"
+            },
+            "type": "fractor-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "a9f\\FractorXml\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Wolf",
+                    "email": "dev@a-w.io",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "XML extension for the File Read-Analyse-Change Tool. Allows modifying XML files",
+            "keywords": [
+                "automation",
+                "dev",
+                "fractor",
+                "migration",
+                "refactoring",
+                "upgrade"
+            ],
+            "support": {
+                "source": "https://github.com/andreaswolf/fractor-xml/tree/v1.1.0"
+            },
+            "time": "2026-09-25T12:42:45+00:00",
+            "published-time": "2026-09-25T12:43:06+00:00"
+        },
+        {
+            "name": "a9f/fractor-yaml",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andreaswolf/fractor-yaml.git",
+                "reference": "9f1f457abe6e7a6461e40cd45af79d0760b3d776"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andreaswolf/fractor-yaml/zipball/9f1f457abe6e7a6461e40cd45af79d0760b3d776",
+                "reference": "9f1f457abe6e7a6461e40cd45af79d0760b3d776",
+                "shasum": ""
+            },
+            "require": {
+                "a9f/fractor": "^1.1",
+                "a9f/fractor-extension-installer": "^1.1",
+                "php": "^8.2",
+                "symfony/yaml": "^5.4 || ^6.4 || ^7.0 || ^8.0",
+                "symplify/rule-doc-generator-contracts": "^11.2",
+                "webmozart/assert": "^1.11 || ^2.0"
+            },
+            "type": "fractor-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "a9f\\FractorYaml\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Wolf",
+                    "email": "dev@a-w.io",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "YAML extension for the File Read-Analyse-Change Tool. Allows modifying YAML files",
+            "keywords": [
+                "automation",
+                "dev",
+                "fractor",
+                "migration",
+                "refactoring",
+                "upgrade"
+            ],
+            "support": {
+                "source": "https://github.com/andreaswolf/fractor-yaml/tree/v1.1.0"
+            },
+            "time": "2026-09-25T12:42:45+00:00",
+            "published-time": "2026-09-25T12:43:05+00:00"
+        },
+        {
+            "name": "a9f/typo3-fractor",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andreaswolf/fractor-typo3-fractor.git",
+                "reference": "e5a5a5306df24e1f418ff9c2c2f3a12195f2f0fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andreaswolf/fractor-typo3-fractor/zipball/e5a5a5306df24e1f418ff9c2c2f3a12195f2f0fb",
+                "reference": "e5a5a5306df24e1f418ff9c2c2f3a12195f2f0fb",
+                "shasum": ""
+            },
+            "require": {
+                "a9f/fractor": "^1.1",
+                "a9f/fractor-extension-installer": "^1.1",
+                "a9f/fractor-fluid": "^1.1",
+                "a9f/fractor-htaccess": "^1.1",
+                "a9f/fractor-typoscript": "^1.1",
+                "a9f/fractor-xliff": "^1.1",
+                "a9f/fractor-xml": "^1.1",
+                "a9f/fractor-yaml": "^1.1",
+                "ext-dom": "*",
+                "php": "^8.2",
+                "symplify/rule-doc-generator-contracts": "^11.2"
+            },
+            "bin": [
+                "bin/typo3-fractor-init"
+            ],
+            "type": "fractor-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "a9f\\Typo3Fractor\\": [
+                        "src/",
+                        "rules/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Wolf",
+                    "email": "dev@a-w.io",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "TYPO3 extension for the File Read-Analyse-Change Tool. Allows modifying all sorts of files TYPO3 understands",
+            "keywords": [
+                "automation",
+                "dev",
+                "fractor",
+                "migration",
+                "refactoring",
+                "typo3",
+                "upgrade"
+            ],
+            "support": {
+                "source": "https://github.com/andreaswolf/fractor-typo3-fractor/tree/v1.1.0"
+            },
+            "time": "2026-09-25T12:42:45+00:00",
+            "published-time": "2026-09-25T12:43:07+00:00"
+        },
         {
             "name": "amphp/amp",
             "version": "v3.1.3",
@@ -903,25 +1453,25 @@
             "published-time": "2026-10-31T17:39:05+00:00"
         },
         {
-            "name": "andersundsehr/phpstan-git-files",
-            "version": "10.2.10",
+            "name": "andersundsehr/grumphp-fractor-task",
+            "version": "11.4.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/andersundsehr/phpstan-git-files.git",
-                "reference": "5ef0164d3309f65756fe64def3a409d64e160839"
+                "url": "https://github.com/andersundsehr/grumphp-fractor-task.git",
+                "reference": "bcd9661e6409ebba3cc7e2a4214a6dea4d5c9ad6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andersundsehr/phpstan-git-files/zipball/5ef0164d3309f65756fe64def3a409d64e160839",
-                "reference": "5ef0164d3309f65756fe64def3a409d64e160839",
+                "url": "https://api.github.com/repos/andersundsehr/grumphp-fractor-task/zipball/bcd9661e6409ebba3cc7e2a4214a6dea4d5c9ad6",
+                "reference": "bcd9661e6409ebba3cc7e2a4214a6dea4d5c9ad6",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^2.1.0",
-                "php": "~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0",
-                "phpstan/phpstan": "^1.9 || ^2.0"
+                "php": "~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0 || ~8.6.0",
+                "phpro/grumphp": "^2.0.0"
             },
             "require-dev": {
+                "andersundsehr/phpstan-git-files": "@dev",
                 "andersundsehr/rector-p": "@dev",
                 "pluswerk/grumphp-bom-task": "@dev",
                 "pluswerk/grumphp-config": "@dev",
@@ -930,7 +1480,63 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "10.0-dev"
+                    "dev-main": "11.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Andersundsehr\\GrumPHPFractorTask\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Benjamin Stiber",
+                    "email": "b.stiber@andersundsehr.com",
+                    "homepage": "https://www.andersundsehr.com"
+                }
+            ],
+            "description": "GrumPHP task for fractor",
+            "support": {
+                "issues": "https://github.com/andersundsehr/grumphp-config/issues",
+                "source": "https://github.com/andersundsehr/grumphp-config/tree/main/packages/grumphp-fractor-task"
+            },
+            "time": "2026-11-20T10:18:49+00:00",
+            "published-time": "2026-11-20T10:19:13+00:00"
+        },
+        {
+            "name": "andersundsehr/phpstan-git-files",
+            "version": "11.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andersundsehr/phpstan-git-files.git",
+                "reference": "4335e07dca42aefce3cd72a129a1cef5a1478ef8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andersundsehr/phpstan-git-files/zipball/4335e07dca42aefce3cd72a129a1cef5a1478ef8",
+                "reference": "4335e07dca42aefce3cd72a129a1cef5a1478ef8",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^2.1.0",
+                "php": "~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0 || ~8.6.0",
+                "phpstan/phpstan": "^1.9 || ^2.0"
+            },
+            "require-dev": {
+                "andersundsehr/grumphp-fractor-task": "@dev",
+                "andersundsehr/rector-p": "@dev",
+                "pluswerk/grumphp-bom-task": "@dev",
+                "pluswerk/grumphp-config": "@dev",
+                "pluswerk/grumphp-xliff-task": "@dev"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "11.0-dev"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -948,30 +1554,32 @@
                 "issues": "https://github.com/andersundsehr/grumphp-config/issues",
                 "source": "https://github.com/andersundsehr/grumphp-config/tree/main/packages/phpstan-git-files"
             },
-            "time": "2026-10-27T08:14:25+00:00",
-            "published-time": "2026-10-27T08:14:30+00:00"
+            "time": "2026-11-20T10:18:43+00:00",
+            "published-time": "2026-11-20T10:19:15+00:00"
         },
         {
             "name": "andersundsehr/rector-p",
-            "version": "10.2.10",
+            "version": "11.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andersundsehr/rector-p.git",
-                "reference": "cf58895406a191c72a38dea7294ef0b2dff53870"
+                "reference": "0bd072a1553c7d0a884d040d34a6be2f8e3f5f15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andersundsehr/rector-p/zipball/cf58895406a191c72a38dea7294ef0b2dff53870",
-                "reference": "cf58895406a191c72a38dea7294ef0b2dff53870",
+                "url": "https://api.github.com/repos/andersundsehr/rector-p/zipball/0bd072a1553c7d0a884d040d34a6be2f8e3f5f15",
+                "reference": "0bd072a1553c7d0a884d040d34a6be2f8e3f5f15",
                 "shasum": ""
             },
             "require": {
-                "php": "~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0",
+                "php": "~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0 || ~8.6.0",
                 "rector/rector": "^2.2.10",
-                "symfony/console": "^5.4 || ^6.4 || ^7.4"
+                "symfony/console": "^5.4 || ^6.4 || ^7.4 || ^8.1"
             },
             "require-dev": {
+                "andersundsehr/grumphp-fractor-task": "@dev",
                 "andersundsehr/phpstan-git-files": "@dev",
+                "phpunit/phpunit": "^11.5.0 || ^12.0.0",
                 "pluswerk/grumphp-bom-task": "@dev",
                 "pluswerk/grumphp-config": "@dev",
                 "pluswerk/grumphp-xliff-task": "@dev"
@@ -982,7 +1590,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "10.0-dev"
+                    "dev-main": "11.0-dev"
                 }
             },
             "autoload": {
@@ -1005,8 +1613,8 @@
                 "issues": "https://github.com/andersundsehr/grumphp-config/issues",
                 "source": "https://github.com/andersundsehr/grumphp-config/tree/main/packages/rector-p"
             },
-            "time": "2026-10-27T08:14:25+00:00",
-            "published-time": "2026-10-27T08:14:29+00:00"
+            "time": "2026-11-20T10:18:42+00:00",
+            "published-time": "2026-11-20T10:19:13+00:00"
         },
         {
             "name": "bnf/phpstan-psr-container",
@@ -1324,73 +1932,6 @@
             },
             "time": "2026-11-11T10:04:49+00:00",
             "published-time": "2026-11-11T10:12:24+00:00"
-        },
-        {
-            "name": "enlightn/security-checker",
-            "version": "v2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/enlightn/security-checker.git",
-                "reference": "d495ab07639388c7c770c5223aa0d42fee1d2604"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/enlightn/security-checker/zipball/d495ab07639388c7c770c5223aa0d42fee1d2604",
-                "reference": "d495ab07639388c7c770c5223aa0d42fee1d2604",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "guzzlehttp/guzzle": "^6.3|^7.0",
-                "php": ">=8.2",
-                "symfony/console": "^7",
-                "symfony/finder": "^3|^4|^5|^6|^7",
-                "symfony/process": "^3.4|^4|^5|^6|^7",
-                "symfony/yaml": "^3.4|^4|^5|^6|^7"
-            },
-            "require-dev": {
-                "ext-zip": "*",
-                "friendsofphp/php-cs-fixer": "^2.18|^3.0",
-                "phpunit/phpunit": "^5.5|^6|^7|^8|^9"
-            },
-            "bin": [
-                "security-checker"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Enlightn\\SecurityChecker\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Paras Malhotra",
-                    "email": "paras@laravel-enlightn.com"
-                },
-                {
-                    "name": "Miguel Piedrafita",
-                    "email": "soy@miguelpiedrafita.com"
-                }
-            ],
-            "description": "A PHP dependency vulnerabilities scanner based on the Security Advisories Database.",
-            "keywords": [
-                "package",
-                "php",
-                "scanner",
-                "security",
-                "security advisories",
-                "vulnerability scanner"
-            ],
-            "support": {
-                "issues": "https://github.com/enlightn/security-checker/issues",
-                "source": "https://github.com/enlightn/security-checker/tree/v2.0.0"
-            },
-            "time": "2023-12-10T07:17:09+00:00",
-            "published-time": "2023-12-10T07:20:45+00:00"
         },
         {
             "name": "ergebnis/composer-normalize",
@@ -2017,58 +2558,37 @@
             "published-time": "2026-11-10T08:04:02+00:00"
         },
         {
-            "name": "guzzlehttp/guzzle",
-            "version": "7.16.3",
+            "name": "helmich/typo3-typoscript-parser",
+            "version": "v2.8.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "c88a78082757dd5a0c44191651535259fcb6e605"
+                "url": "https://github.com/martin-helmich/typo3-typoscript-parser.git",
+                "reference": "dd9f7a3acbd240670e168619d308df603d4b56d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/c88a78082757dd5a0c44191651535259fcb6e605",
-                "reference": "c88a78082757dd5a0c44191651535259fcb6e605",
+                "url": "https://api.github.com/repos/martin-helmich/typo3-typoscript-parser/zipball/dd9f7a3acbd240670e168619d308df603d4b56d6",
+                "reference": "dd9f7a3acbd240670e168619d308df603d4b56d6",
                 "shasum": ""
             },
             "require": {
-                "ext-json": "*",
-                "guzzlehttp/promises": "^2.6",
-                "guzzlehttp/psr7": "^2.13.4",
-                "php": "^7.2.5 || ^8.0",
-                "psr/http-client": "^1.0",
-                "symfony/deprecation-contracts": "^2.5 || ^3.0",
-                "symfony/polyfill-php80": "^1.25"
-            },
-            "provide": {
-                "psr/http-client-implementation": "1.0"
+                "php": ">=8.1",
+                "symfony/config": "^5.4 || ^6.4 || ^7.0",
+                "symfony/console": "^5.4 || ^6.4 || ^7.0",
+                "symfony/dependency-injection": "^5.4 || ^6.4 || ^7.0",
+                "symfony/yaml": "^5.4 || ^6.4 || ^7.0"
             },
             "require-dev": {
-                "bamarni/composer-bin-plugin": "^1.8.2",
-                "ext-curl": "*",
-                "guzzle/client-integration-tests": "3.0.3",
-                "guzzlehttp/test-server": "^0.7",
-                "php-http/message-factory": "^1.1",
-                "phpunit/phpunit": "^8.5.52 || ^9.6.34",
-                "psr/log": "^1.1 || ^2.0 || ^3.0"
-            },
-            "suggest": {
-                "ext-curl": "Required for CURL handler support",
-                "ext-intl": "Required for Internationalized Domain Name (IDN) support",
-                "psr/log": "Required for using the Log middleware"
+                "php-vfs/php-vfs": "^1.4.2",
+                "phpspec/prophecy-phpunit": "^2.1.0",
+                "phpstan/phpstan": "^2.0",
+                "phpunit/phpunit": "^10.5 || ^11.5",
+                "symfony/phpunit-bridge": "^5.4 || ^6.4 || ^7.0"
             },
             "type": "library",
-            "extra": {
-                "bamarni-bin": {
-                    "bin-links": true,
-                    "forward-command": false
-                }
-            },
             "autoload": {
-                "files": [
-                    "src/functions_include.php"
-                ],
                 "psr-4": {
-                    "GuzzleHttp\\": "src/"
+                    "Helmich\\TypoScriptParser\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2077,278 +2597,29 @@
             ],
             "authors": [
                 {
-                    "name": "Graham Campbell",
-                    "email": "hello@gjcampbell.co.uk",
-                    "homepage": "https://github.com/GrahamCampbell"
-                },
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                },
-                {
-                    "name": "Jeremy Lindblom",
-                    "email": "jeremeamia@gmail.com",
-                    "homepage": "https://github.com/jeremeamia"
-                },
-                {
-                    "name": "George Mponos",
-                    "email": "gmponos@gmail.com",
-                    "homepage": "https://github.com/gmponos"
-                },
-                {
-                    "name": "Tobias Nyholm",
-                    "email": "tobias.nyholm@gmail.com",
-                    "homepage": "https://github.com/Nyholm"
-                },
-                {
-                    "name": "Márk Sági-Kazár",
-                    "email": "mark.sagikazar@gmail.com",
-                    "homepage": "https://github.com/sagikazarmark"
-                },
-                {
-                    "name": "Tobias Schultze",
-                    "email": "webmaster@tubo-world.de",
-                    "homepage": "https://github.com/Tobion"
+                    "name": "Martin Helmich",
+                    "email": "m.helmich@mittwald.de",
+                    "role": "lead"
                 }
             ],
-            "description": "Guzzle is a PHP HTTP client library",
-            "keywords": [
-                "client",
-                "curl",
-                "framework",
-                "http",
-                "http client",
-                "psr-18",
-                "psr-7",
-                "rest",
-                "web service"
-            ],
+            "description": "Parser for the TYPO3 configuration language TypoScript.",
+            "homepage": "https://github.com/martin-helmich",
             "support": {
-                "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/7.16.3"
+                "issues": "https://github.com/martin-helmich/typo3-typoscript-parser/issues",
+                "source": "https://github.com/martin-helmich/typo3-typoscript-parser/tree/v2.8.1"
             },
             "funding": [
                 {
-                    "url": "https://github.com/GrahamCampbell",
+                    "url": "https://donate.helmich.me",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/martin-helmich",
                     "type": "github"
-                },
-                {
-                    "url": "https://github.com/Nyholm",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/guzzlehttp/guzzle",
-                    "type": "tidelift"
                 }
             ],
-            "time": "2026-11-17T16:23:09+00:00",
-            "published-time": "2026-11-17T16:23:41+00:00"
-        },
-        {
-            "name": "guzzlehttp/promises",
-            "version": "2.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/guzzle/promises.git",
-                "reference": "3d88c829bd5f13d13847b39067dbf09a60af2154"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/3d88c829bd5f13d13847b39067dbf09a60af2154",
-                "reference": "3d88c829bd5f13d13847b39067dbf09a60af2154",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.2.5 || ^8.0",
-                "symfony/deprecation-contracts": "^2.5 || ^3.0"
-            },
-            "require-dev": {
-                "bamarni/composer-bin-plugin": "^1.8.2",
-                "phpunit/phpunit": "^8.5.52 || ^9.6.34"
-            },
-            "type": "library",
-            "extra": {
-                "bamarni-bin": {
-                    "bin-links": true,
-                    "forward-command": false
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Promise\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Graham Campbell",
-                    "email": "hello@gjcampbell.co.uk",
-                    "homepage": "https://github.com/GrahamCampbell"
-                },
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                },
-                {
-                    "name": "Tobias Nyholm",
-                    "email": "tobias.nyholm@gmail.com",
-                    "homepage": "https://github.com/Nyholm"
-                },
-                {
-                    "name": "Tobias Schultze",
-                    "email": "webmaster@tubo-world.de",
-                    "homepage": "https://github.com/Tobion"
-                }
-            ],
-            "description": "Guzzle promises library",
-            "keywords": [
-                "promise"
-            ],
-            "support": {
-                "issues": "https://github.com/guzzle/promises/issues",
-                "source": "https://github.com/guzzle/promises/tree/2.6.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/GrahamCampbell",
-                    "type": "github"
-                },
-                {
-                    "url": "https://github.com/Nyholm",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/guzzlehttp/promises",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2026-10-18T12:46:59+00:00",
-            "published-time": "2026-10-18T12:47:39+00:00"
-        },
-        {
-            "name": "guzzlehttp/psr7",
-            "version": "2.13.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/guzzle/psr7.git",
-                "reference": "ad5e3f872690e1151e1171de2963150fc45ea1e3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/ad5e3f872690e1151e1171de2963150fc45ea1e3",
-                "reference": "ad5e3f872690e1151e1171de2963150fc45ea1e3",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.2.5 || ^8.0",
-                "psr/http-factory": "^1.0",
-                "psr/http-message": "^1.1 || ^2.0",
-                "ralouphie/getallheaders": "^3.0",
-                "symfony/deprecation-contracts": "^2.5 || ^3.0",
-                "symfony/polyfill-php80": "^1.25"
-            },
-            "provide": {
-                "psr/http-factory-implementation": "1.0",
-                "psr/http-message-implementation": "1.0"
-            },
-            "require-dev": {
-                "bamarni/composer-bin-plugin": "^1.8.2",
-                "http-interop/http-factory-tests": "1.1.0",
-                "jshttp/mime-db": "1.54.0.1",
-                "phpunit/phpunit": "^8.5.52 || ^9.6.34"
-            },
-            "suggest": {
-                "laminas/laminas-httphandlerrunner": "Emit PSR-7 responses"
-            },
-            "type": "library",
-            "extra": {
-                "bamarni-bin": {
-                    "bin-links": true,
-                    "forward-command": false
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Psr7\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Graham Campbell",
-                    "email": "hello@gjcampbell.co.uk",
-                    "homepage": "https://github.com/GrahamCampbell"
-                },
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                },
-                {
-                    "name": "George Mponos",
-                    "email": "gmponos@gmail.com",
-                    "homepage": "https://github.com/gmponos"
-                },
-                {
-                    "name": "Tobias Nyholm",
-                    "email": "tobias.nyholm@gmail.com",
-                    "homepage": "https://github.com/Nyholm"
-                },
-                {
-                    "name": "Márk Sági-Kazár",
-                    "email": "mark.sagikazar@gmail.com",
-                    "homepage": "https://github.com/sagikazarmark"
-                },
-                {
-                    "name": "Tobias Schultze",
-                    "email": "webmaster@tubo-world.de",
-                    "homepage": "https://github.com/Tobion"
-                },
-                {
-                    "name": "Márk Sági-Kazár",
-                    "email": "mark.sagikazar@gmail.com",
-                    "homepage": "https://sagikazarmark.hu"
-                }
-            ],
-            "description": "PSR-7 message implementation that also provides common utility methods",
-            "keywords": [
-                "http",
-                "message",
-                "psr-7",
-                "request",
-                "response",
-                "stream",
-                "uri",
-                "url"
-            ],
-            "support": {
-                "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.13.4"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/GrahamCampbell",
-                    "type": "github"
-                },
-                {
-                    "url": "https://github.com/Nyholm",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/guzzlehttp/psr7",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2026-11-17T16:15:51+00:00",
-            "published-time": "2026-11-17T16:16:24+00:00"
+            "time": "2025-08-31T09:10:27+00:00",
+            "published-time": "2025-08-31T09:17:45+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -2536,6 +2807,246 @@
             },
             "time": "2026-10-14T21:20:29+00:00",
             "published-time": "2026-11-10T16:11:08+00:00"
+        },
+        {
+            "name": "league/flysystem",
+            "version": "3.36.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/flysystem.git",
+                "reference": "f7fb152932f30072d573510cbd4dd657d6475b25"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/f7fb152932f30072d573510cbd4dd657d6475b25",
+                "reference": "f7fb152932f30072d573510cbd4dd657d6475b25",
+                "shasum": ""
+            },
+            "require": {
+                "league/flysystem-local": "^3.0.0",
+                "league/mime-type-detection": "^1.0.0",
+                "php": "^8.0.2"
+            },
+            "conflict": {
+                "async-aws/core": "<1.19.0",
+                "async-aws/s3": "<1.14.0",
+                "aws/aws-sdk-php": "3.209.31 || 3.210.0",
+                "guzzlehttp/guzzle": "<7.0",
+                "guzzlehttp/ringphp": "<1.1.1",
+                "phpseclib/phpseclib": "3.0.15",
+                "symfony/http-client": "<5.2"
+            },
+            "require-dev": {
+                "async-aws/s3": "^1.5 || ^2.0",
+                "async-aws/simple-s3": "^1.1 || ^2.0",
+                "aws/aws-sdk-php": "^3.295.10",
+                "composer/semver": "^3.0",
+                "ext-fileinfo": "*",
+                "ext-ftp": "*",
+                "ext-mongodb": "^1.3|^2",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3.5",
+                "google/cloud-storage": "^1.23",
+                "guzzlehttp/psr7": "^2.6",
+                "microsoft/azure-storage-blob": "^1.1",
+                "mongodb/mongodb": "^1.2|^2",
+                "phpseclib/phpseclib": "^3.0.36",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^9.5.11|^10.0",
+                "sabre/dav": "^4.6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "League\\Flysystem\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Frank de Jonge",
+                    "email": "info@frankdejonge.nl"
+                }
+            ],
+            "description": "File storage abstraction for PHP",
+            "keywords": [
+                "WebDAV",
+                "aws",
+                "cloud",
+                "file",
+                "files",
+                "filesystem",
+                "filesystems",
+                "ftp",
+                "s3",
+                "sftp",
+                "storage"
+            ],
+            "support": {
+                "issues": "https://github.com/thephpleague/flysystem/issues",
+                "source": "https://github.com/thephpleague/flysystem/tree/3.36.0"
+            },
+            "time": "2026-09-02T08:00:27+00:00",
+            "published-time": "2026-09-02T08:01:40+00:00"
+        },
+        {
+            "name": "league/flysystem-local",
+            "version": "3.35.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/flysystem-local.git",
+                "reference": "a099b24dce160f3b2239043d13d47c4a1a214ea4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/flysystem-local/zipball/a099b24dce160f3b2239043d13d47c4a1a214ea4",
+                "reference": "a099b24dce160f3b2239043d13d47c4a1a214ea4",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "league/flysystem": "^3.0.0",
+                "league/mime-type-detection": "^1.0.0",
+                "php": "^8.0.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "League\\Flysystem\\Local\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Frank de Jonge",
+                    "email": "info@frankdejonge.nl"
+                }
+            ],
+            "description": "Local filesystem adapter for Flysystem.",
+            "keywords": [
+                "Flysystem",
+                "file",
+                "files",
+                "filesystem",
+                "local"
+            ],
+            "support": {
+                "source": "https://github.com/thephpleague/flysystem-local/tree/3.35.3"
+            },
+            "time": "2026-08-12T13:29:21+00:00",
+            "published-time": "2026-08-22T12:57:18+00:00"
+        },
+        {
+            "name": "league/flysystem-memory",
+            "version": "3.31.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/flysystem-memory.git",
+                "reference": "b2d1700ed1215684e7276e55bcacf350e0e06ff9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/flysystem-memory/zipball/b2d1700ed1215684e7276e55bcacf350e0e06ff9",
+                "reference": "b2d1700ed1215684e7276e55bcacf350e0e06ff9",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "league/flysystem": "^3.0.0",
+                "php": "^8.0.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "League\\Flysystem\\InMemory\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Frank de Jonge",
+                    "email": "info@frankdejonge.nl"
+                }
+            ],
+            "description": "In-memory filesystem adapter for Flysystem.",
+            "keywords": [
+                "Flysystem",
+                "file",
+                "files",
+                "filesystem",
+                "memory"
+            ],
+            "support": {
+                "source": "https://github.com/thephpleague/flysystem-memory/tree/3.31.0"
+            },
+            "time": "2026-01-23T15:30:45+00:00",
+            "published-time": "2026-01-23T15:44:36+00:00"
+        },
+        {
+            "name": "league/mime-type-detection",
+            "version": "1.17.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/mime-type-detection.git",
+                "reference": "f5f47eff7c48ed1003069a2ca67f316fb4021c76"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/mime-type-detection/zipball/f5f47eff7c48ed1003069a2ca67f316fb4021c76",
+                "reference": "f5f47eff7c48ed1003069a2ca67f316fb4021c76",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.2",
+                "phpstan/phpstan": "^0.12.68",
+                "phpunit/phpunit": "^8.5.8 || ^9.3 || ^10.0 || ^11.0 || ^12.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "League\\MimeTypeDetection\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Frank de Jonge",
+                    "email": "info@frankdejonge.nl"
+                }
+            ],
+            "description": "Mime-type detection for Flysystem",
+            "support": {
+                "issues": "https://github.com/thephpleague/mime-type-detection/issues",
+                "source": "https://github.com/thephpleague/mime-type-detection/tree/1.17.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/frankdejonge",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/league/flysystem",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2026-07-09T11:49:27+00:00",
+            "published-time": "2026-07-09T11:50:09+00:00"
         },
         {
             "name": "league/uri",
@@ -2903,6 +3414,98 @@
             "published-time": "2026-11-16T10:45:37+00:00"
         },
         {
+            "name": "nette/utils",
+            "version": "v4.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nette/utils.git",
+                "reference": "6bf24518accf32cf845bca305e0b92078700fd01"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nette/utils/zipball/6bf24518accf32cf845bca305e0b92078700fd01",
+                "reference": "6bf24518accf32cf845bca305e0b92078700fd01",
+                "shasum": ""
+            },
+            "require": {
+                "php": "8.2 - 8.6"
+            },
+            "conflict": {
+                "nette/finder": "<3",
+                "nette/schema": "<1.2.2"
+            },
+            "require-dev": {
+                "jetbrains/phpstorm-attributes": "^1.2",
+                "nette/phpstan-rules": "^1.0",
+                "nette/tester": "^2.5",
+                "phpstan/extension-installer": "^1.4@stable",
+                "phpstan/phpstan": "^2.1@stable",
+                "tracy/tracy": "^2.9"
+            },
+            "suggest": {
+                "ext-gd": "to use Image",
+                "ext-iconv": "to use Strings::chr(), ord() and reverse()",
+                "ext-intl": "to use Strings::webalize(), toAscii(), normalize() and compare()",
+                "ext-json": "to use Nette\\Utils\\Json",
+                "ext-mbstring": "to use Strings::lower() etc...",
+                "ext-tokenizer": "to use Nette\\Utils\\Reflection::getUseStatements()"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Nette\\": "src"
+                },
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0-only",
+                "GPL-3.0-only"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "https://davidgrudl.com"
+                },
+                {
+                    "name": "Nette Community",
+                    "homepage": "https://nette.org/contributors"
+                }
+            ],
+            "description": "🛠  Nette Utils: lightweight utilities for string & array manipulation, image handling, safe JSON encoding/decoding, validation, slug or strong password generating etc.",
+            "homepage": "https://nette.org",
+            "keywords": [
+                "array",
+                "core",
+                "datetime",
+                "images",
+                "json",
+                "nette",
+                "paginator",
+                "password",
+                "slugify",
+                "string",
+                "unicode",
+                "utf-8",
+                "utility",
+                "validation"
+            ],
+            "support": {
+                "issues": "https://github.com/nette/utils/issues",
+                "source": "https://github.com/nette/utils/tree/v4.1.6"
+            },
+            "time": "2026-10-20T17:07:56+00:00",
+            "published-time": "2026-10-20T17:48:30+00:00"
+        },
+        {
             "name": "ondram/ci-detector",
             "version": "4.2.0",
             "source": {
@@ -3045,16 +3648,16 @@
         },
         {
             "name": "phpro/grumphp",
-            "version": "v2.26.0",
+            "version": "v2.27.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpro/grumphp.git",
-                "reference": "c469dc05dcb81d6893bda31ff87eb48512c30fc7"
+                "reference": "b297b099098ff57974b877d29e0bae9f8d6b0210"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpro/grumphp/zipball/c469dc05dcb81d6893bda31ff87eb48512c30fc7",
-                "reference": "c469dc05dcb81d6893bda31ff87eb48512c30fc7",
+                "url": "https://api.github.com/repos/phpro/grumphp/zipball/b297b099098ff57974b877d29e0bae9f8d6b0210",
+                "reference": "b297b099098ff57974b877d29e0bae9f8d6b0210",
                 "shasum": ""
             },
             "require": {
@@ -3067,7 +3670,7 @@
                 "laravel/serializable-closure": "^2.0",
                 "monolog/monolog": "^2.0 || ^3.0",
                 "ondram/ci-detector": "^4.0",
-                "php": "~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0",
+                "php": "~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0 || ~8.6.0",
                 "psr/container": "^1.1 || ^2.0",
                 "seld/jsonlint": "^1.8",
                 "symfony/config": "^6.4 || ^7.0 || ^8.0",
@@ -3160,10 +3763,10 @@
             "description": "A composer plugin that enables source code quality checks.",
             "support": {
                 "issues": "https://github.com/phpro/grumphp/issues",
-                "source": "https://github.com/phpro/grumphp/tree/v2.26.0"
+                "source": "https://github.com/phpro/grumphp/tree/v2.27.1"
             },
-            "time": "2026-10-16T13:19:51+00:00",
-            "published-time": "2026-10-16T13:20:29+00:00"
+            "time": "2026-11-20T11:21:38+00:00",
+            "published-time": "2026-11-20T11:21:54+00:00"
         },
         {
             "name": "phpstan/extension-installer",
@@ -3281,23 +3884,24 @@
         },
         {
             "name": "pluswerk/grumphp-bom-task",
-            "version": "10.2.10",
+            "version": "11.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andersundsehr/grumphp-bom-task.git",
-                "reference": "01110f371b5e6e37edb149dd626f55f24b25fa2d"
+                "reference": "07fb40b733114eeb559bd25c71e889154594703d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andersundsehr/grumphp-bom-task/zipball/01110f371b5e6e37edb149dd626f55f24b25fa2d",
-                "reference": "01110f371b5e6e37edb149dd626f55f24b25fa2d",
+                "url": "https://api.github.com/repos/andersundsehr/grumphp-bom-task/zipball/07fb40b733114eeb559bd25c71e889154594703d",
+                "reference": "07fb40b733114eeb559bd25c71e889154594703d",
                 "shasum": ""
             },
             "require": {
-                "php": "~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0",
+                "php": "~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0 || ~8.6.0",
                 "phpro/grumphp": "^2.0.0"
             },
             "require-dev": {
+                "andersundsehr/grumphp-fractor-task": "@dev",
                 "andersundsehr/phpstan-git-files": "@dev",
                 "andersundsehr/rector-p": "@dev",
                 "pluswerk/grumphp-config": "@dev",
@@ -3309,7 +3913,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "10.0.x-dev"
+                    "dev-main": "11.0.x-dev"
                 }
             },
             "autoload": {
@@ -3333,50 +3937,54 @@
                 "issues": "https://github.com/andersundsehr/grumphp-config/issues",
                 "source": "https://github.com/andersundsehr/grumphp-config/tree/main/packages/grumphp-bom-task"
             },
-            "time": "2026-10-27T08:14:24+00:00",
-            "published-time": "2026-10-27T08:14:29+00:00"
+            "time": "2026-11-20T10:18:43+00:00",
+            "published-time": "2026-11-20T10:19:21+00:00"
         },
         {
             "name": "pluswerk/grumphp-config",
-            "version": "10.2.10",
+            "version": "11.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andersundsehr/grumphp-config.git",
-                "reference": "7a775e5c9a862cdd2aadad81784d013139d56d59"
+                "reference": "05f42a0fd3b3f7354213addd37f11b02bc4b78d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andersundsehr/grumphp-config/zipball/7a775e5c9a862cdd2aadad81784d013139d56d59",
-                "reference": "7a775e5c9a862cdd2aadad81784d013139d56d59",
+                "url": "https://api.github.com/repos/andersundsehr/grumphp-config/zipball/05f42a0fd3b3f7354213addd37f11b02bc4b78d7",
+                "reference": "05f42a0fd3b3f7354213addd37f11b02bc4b78d7",
                 "shasum": ""
             },
             "require": {
-                "andersundsehr/phpstan-git-files": "^10.0.0",
-                "andersundsehr/rector-p": "^10.0.0",
+                "a9f/typo3-fractor": "^0.5.8 || ^1.0.0",
+                "andersundsehr/grumphp-fractor-task": "^11.0.0",
+                "andersundsehr/phpstan-git-files": "^11.0.0",
+                "andersundsehr/rector-p": "^11.0.0",
                 "bnf/phpstan-psr-container": "^1.1.0",
                 "composer-plugin-api": "^2.1.0",
                 "composer/semver": "^3.4.3",
-                "enlightn/security-checker": "^1.10.0 || ^2.0.0",
                 "ergebnis/composer-normalize": "^2.45.0",
-                "php": "~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0",
+                "php": "~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0 || ~8.6.0",
                 "php-parallel-lint/php-parallel-lint": "^1.4.0",
-                "phpro/grumphp": "^2.10.0",
+                "phpro/grumphp": "^2.16.0",
                 "phpstan/extension-installer": "^1.4.3",
                 "phpstan/phpstan": "^2.1.5",
-                "pluswerk/grumphp-bom-task": "^10.0.0",
-                "pluswerk/grumphp-xliff-task": "^10.0.0",
+                "pluswerk/grumphp-bom-task": "^11.0.0",
+                "pluswerk/grumphp-xliff-task": "^11.0.0",
                 "rector/rector": "^2.2.10",
+                "sebastian/diff": "^4.0 || ^5.0 || ^6.0 || ^7.0 || ^8.0",
                 "squizlabs/php_codesniffer": "^4.0.1",
-                "symfony/yaml": "^5.4.0 || ^6.4.18 || ^7.4.0"
+                "symfony/yaml": "^5.4.0 || ^6.4.18 || ^7.4.0 || ^8.1.0"
             },
             "require-dev": {
-                "andersundsehr/phpstan-git-files": "dev-main as 10.0.0",
-                "andersundsehr/rector-p": "dev-main as 10.0.0",
+                "andersundsehr/grumphp-fractor-task": "dev-main as 11.0.0",
+                "andersundsehr/phpstan-git-files": "dev-main as 11.0.0",
+                "andersundsehr/rector-p": "dev-main as 11.0.0",
                 "composer/composer": "^2.8.5",
-                "pluswerk/grumphp-bom-task": "dev-main as 10.0.0",
-                "pluswerk/grumphp-xliff-task": "dev-main as 10.0.0",
+                "phpunit/phpunit": "^11.5.0 || ^12.0.0",
+                "pluswerk/grumphp-bom-task": "dev-main as 11.0.0",
+                "pluswerk/grumphp-xliff-task": "dev-main as 11.0.0",
                 "roave/security-advisories": "dev-latest",
-                "symfony/var-dumper": "^5.4.0 || ^6.4.18 || ^7.0.0"
+                "symfony/var-dumper": "^5.4.0 || ^6.4.18 || ^7.0.0 || ^8.1.0"
             },
             "type": "composer-plugin",
             "extra": {
@@ -3404,31 +4012,32 @@
             ],
             "support": {
                 "issues": "https://github.com/andersundsehr/grumphp-config/issues",
-                "source": "https://github.com/andersundsehr/grumphp-config/tree/10.2.10"
+                "source": "https://github.com/andersundsehr/grumphp-config/tree/11.4.0"
             },
-            "time": "2026-10-27T08:11:59+00:00",
-            "published-time": "2026-10-27T08:12:39+00:00"
+            "time": "2026-11-20T10:17:14+00:00",
+            "published-time": "2026-11-20T10:18:02+00:00"
         },
         {
             "name": "pluswerk/grumphp-xliff-task",
-            "version": "10.2.10",
+            "version": "11.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andersundsehr/grumphp-xliff-task.git",
-                "reference": "2ea1ae6b7d8babaff20e299080cfa2c6d66532c7"
+                "reference": "f9ea79784c034f0a37683eee378b3d539b0bc7d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andersundsehr/grumphp-xliff-task/zipball/2ea1ae6b7d8babaff20e299080cfa2c6d66532c7",
-                "reference": "2ea1ae6b7d8babaff20e299080cfa2c6d66532c7",
+                "url": "https://api.github.com/repos/andersundsehr/grumphp-xliff-task/zipball/f9ea79784c034f0a37683eee378b3d539b0bc7d8",
+                "reference": "f9ea79784c034f0a37683eee378b3d539b0bc7d8",
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
-                "php": "~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0",
+                "php": "~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0 || ~8.6.0",
                 "phpro/grumphp": "^2.0.0"
             },
             "require-dev": {
+                "andersundsehr/grumphp-fractor-task": "@dev",
                 "andersundsehr/phpstan-git-files": "@dev",
                 "andersundsehr/rector-p": "@dev",
                 "pluswerk/grumphp-bom-task": "@dev",
@@ -3437,7 +4046,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "10.0.x-dev"
+                    "dev-main": "11.0.x-dev"
                 }
             },
             "autoload": {
@@ -3461,8 +4070,8 @@
                 "issues": "https://github.com/andersundsehr/grumphp-config/issues",
                 "source": "https://github.com/andersundsehr/grumphp-config/tree/main/packages/grumphp-xliff-task"
             },
-            "time": "2026-10-27T08:14:26+00:00",
-            "published-time": "2026-10-27T08:14:30+00:00"
+            "time": "2026-11-20T10:18:46+00:00",
+            "published-time": "2026-11-20T10:19:14+00:00"
         },
         {
             "name": "psr/cache",
@@ -3618,59 +4227,6 @@
             },
             "time": "2019-01-08T18:20:26+00:00",
             "published-time": "2019-03-25T15:31:44+00:00"
-        },
-        {
-            "name": "psr/http-client",
-            "version": "1.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/http-client.git",
-                "reference": "bb5906edc1c324c9a05aa0873d40117941e5fa90"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-client/zipball/bb5906edc1c324c9a05aa0873d40117941e5fa90",
-                "reference": "bb5906edc1c324c9a05aa0873d40117941e5fa90",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.0 || ^8.0",
-                "psr/http-message": "^1.0 || ^2.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Psr\\Http\\Client\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "https://www.php-fig.org/"
-                }
-            ],
-            "description": "Common interface for HTTP clients",
-            "homepage": "https://github.com/php-fig/http-client",
-            "keywords": [
-                "http",
-                "http-client",
-                "psr",
-                "psr-18"
-            ],
-            "support": {
-                "source": "https://github.com/php-fig/http-client"
-            },
-            "time": "2023-09-23T14:17:50+00:00",
-            "published-time": "2023-09-23T14:18:12+00:00"
         },
         {
             "name": "psr/http-factory",
@@ -3834,51 +4390,6 @@
             "published-time": "2024-09-11T13:21:14+00:00"
         },
         {
-            "name": "ralouphie/getallheaders",
-            "version": "3.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ralouphie/getallheaders.git",
-                "reference": "120b605dfeb996808c31b6477290a714d356e822"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/120b605dfeb996808c31b6477290a714d356e822",
-                "reference": "120b605dfeb996808c31b6477290a714d356e822",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.6"
-            },
-            "require-dev": {
-                "php-coveralls/php-coveralls": "^2.1",
-                "phpunit/phpunit": "^5 || ^6.5"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/getallheaders.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ralph Khattar",
-                    "email": "ralph.khattar@gmail.com"
-                }
-            ],
-            "description": "A polyfill for getallheaders.",
-            "support": {
-                "issues": "https://github.com/ralouphie/getallheaders/issues",
-                "source": "https://github.com/ralouphie/getallheaders/tree/develop"
-            },
-            "time": "2019-03-08T08:55:37+00:00",
-            "published-time": "2019-03-08T09:01:32+00:00"
-        },
-        {
             "name": "rector/rector",
             "version": "2.8.5",
             "source": {
@@ -4010,6 +4521,74 @@
             "published-time": "2026-11-19T18:36:08+00:00"
         },
         {
+            "name": "sebastian/diff",
+            "version": "6.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/diff.git",
+                "reference": "b4ccd857127db5d41a5b676f24b51371d76d8544"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/b4ccd857127db5d41a5b676f24b51371d76d8544",
+                "reference": "b4ccd857127db5d41a5b676f24b51371d76d8544",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0",
+                "symfony/process": "^4.2 || ^5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "6.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                },
+                {
+                    "name": "Kore Nordmann",
+                    "email": "mail@kore-nordmann.de"
+                }
+            ],
+            "description": "Diff implementation",
+            "homepage": "https://github.com/sebastianbergmann/diff",
+            "keywords": [
+                "diff",
+                "udiff",
+                "unidiff",
+                "unified diff"
+            ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/diff/issues",
+                "security": "https://github.com/sebastianbergmann/diff/security/policy",
+                "source": "https://github.com/sebastianbergmann/diff/tree/6.0.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-07-03T04:53:05+00:00",
+            "published-time": "2024-07-03T04:53:18+00:00"
+        },
+        {
             "name": "seld/jsonlint",
             "version": "1.12.2",
             "source": {
@@ -4073,6 +4652,67 @@
             ],
             "time": "2026-11-03T10:16:18+00:00",
             "published-time": "2026-11-03T10:20:37+00:00"
+        },
+        {
+            "name": "simonschaufi/pretty-xml",
+            "version": "3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/simonschaufi/pretty-xml.git",
+                "reference": "8760267bcf603882c6cb8e384f885d7b664c5a9a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/simonschaufi/pretty-xml/zipball/8760267bcf603882c6cb8e384f885d7b664c5a9a",
+                "reference": "8760267bcf603882c6cb8e384f885d7b664c5a9a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4 || ^8.0",
+                "symfony/polyfill-php80": "^1.31"
+            },
+            "require-dev": {
+                "ergebnis/composer-normalize": "^2.47",
+                "phpunit/phpunit": "^10.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PrettyXml\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Shane Auckland",
+                    "email": "shane.auckland@gmail.com",
+                    "homepage": "https://shaneauckland.co.uk"
+                }
+            ],
+            "description": "Library for pretty-printing XML",
+            "keywords": [
+                "pretty",
+                "xml"
+            ],
+            "support": {
+                "issues": "https://github.com/simonschaufi/pretty-xml/issues",
+                "source": "https://github.com/simonschaufi/pretty-xml/tree/3.1.1"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/simonschaufi/10",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/simonschaufi",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-09-25T10:02:38+00:00",
+            "published-time": "2026-09-25T12:28:14+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -6050,6 +6690,183 @@
             ],
             "time": "2026-11-04T08:27:22+00:00",
             "published-time": "2026-11-04T11:28:41+00:00"
+        },
+        {
+            "name": "symplify/rule-doc-generator-contracts",
+            "version": "11.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symplify/rule-doc-generator-contracts.git",
+                "reference": "479cfcfd46047f80624aba931d9789e50475b5c6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symplify/rule-doc-generator-contracts/zipball/479cfcfd46047f80624aba931d9789e50475b5c6",
+                "reference": "479cfcfd46047f80624aba931d9789e50475b5c6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "php-parallel-lint/php-parallel-lint": "^1.3",
+                "phpstan/extension-installer": "^1.2",
+                "rector/rector": "^0.15.10",
+                "symplify/easy-ci": "^11.1",
+                "symplify/easy-coding-standard": "^11.1",
+                "symplify/easy-testing": "^11.1",
+                "symplify/phpstan-extensions": "^11.1",
+                "symplify/phpstan-rules": "11.2.3.72",
+                "tomasvotruba/unused-public": "^0.0.34"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "11.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symplify\\RuleDocGenerator\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Contracts for production code of RuleDocGenerator",
+            "support": {
+                "source": "https://github.com/symplify/rule-doc-generator-contracts/tree/11.2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/rectorphp",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/tomasvotruba",
+                    "type": "github"
+                }
+            ],
+            "abandoned": true,
+            "time": "2024-03-18T22:02:54+00:00",
+            "published-time": "2024-03-18T22:01:44+00:00"
+        },
+        {
+            "name": "tivie/htaccess-parser",
+            "version": "0.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tivie/php-htaccess-parser.git",
+                "reference": "0b6252a36b8ac0586306fd2db3dac78985c48589"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tivie/php-htaccess-parser/zipball/0b6252a36b8ac0586306fd2db3dac78985c48589",
+                "reference": "0b6252a36b8ac0586306fd2db3dac78985c48589",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^11.0.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Tivie\\HtaccessParser\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Estevão Soares dos Santos",
+                    "email": "estevao@soares-dos-santos.com"
+                }
+            ],
+            "description": "A .htaccess parser and validator implemented in PHP",
+            "homepage": "https://github.com/tivie/php-htaccess-parser",
+            "keywords": [
+                ".htaccess",
+                "htaccess"
+            ],
+            "support": {
+                "issues": "https://github.com/tivie/php-htaccess-parser/issues",
+                "source": "https://github.com/tivie/php-htaccess-parser/tree/0.4.0"
+            },
+            "time": "2025-08-13T07:38:02+00:00",
+            "published-time": "2025-08-13T07:41:56+00:00"
+        },
+        {
+            "name": "webmozart/assert",
+            "version": "2.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webmozarts/assert.git",
+                "reference": "e578132c01bd0c64108386ab20d8217cd175ddec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/e578132c01bd0c64108386ab20d8217cd175ddec",
+                "reference": "e578132c01bd0c64108386ab20d8217cd175ddec",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-date": "*",
+                "ext-filter": "*",
+                "php": "^8.2"
+            },
+            "suggest": {
+                "ext-intl": "",
+                "ext-simplexml": "",
+                "ext-spl": ""
+            },
+            "type": "library",
+            "extra": {
+                "psalm": {
+                    "pluginClass": "Webmozart\\Assert\\PsalmPlugin"
+                },
+                "branch-alias": {
+                    "dev-master": "2.0-dev",
+                    "dev-feature/2-0": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Webmozart\\Assert\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@gmail.com"
+                },
+                {
+                    "name": "Woody Gilk",
+                    "email": "woody.gilk@gmail.com"
+                }
+            ],
+            "description": "Assertions to validate method input/output with nice error messages.",
+            "keywords": [
+                "assert",
+                "check",
+                "validate"
+            ],
+            "support": {
+                "issues": "https://github.com/webmozarts/assert/issues",
+                "source": "https://github.com/webmozarts/assert/tree/2.5.1"
+            },
+            "time": "2026-11-15T13:41:13+00:00",
+            "published-time": "2026-11-15T13:41:42+00:00"
         }
     ],
     "aliases": [],
